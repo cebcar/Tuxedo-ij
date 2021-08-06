@@ -198,7 +198,7 @@
 - add Server GitHub
 - connect to server GitHub
 - General: provide credentials to connect to GitHub project; test
-- commit message: &lt;pr&gt;#${number}-${summary}"| "
+- commit message (omit quotes): &lt;pr&gt;#${number}-${summary}"| "
 
 ### Dialogs
 #### Print
