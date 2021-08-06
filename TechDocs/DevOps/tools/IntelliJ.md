@@ -159,9 +159,8 @@
 - [ + ] Highlight files from non-active changelist
 
 #### Issue Navigation
-*click on IntelliJ issue link to show matching issue in GitHub*
 - issue pattern: &lt;ProjectName&gt;-([\d]+)
-  - link to GitHub issue: https://github.com/cebcar/DevOps/issues/$1
+  - links to GitHub issue: https://github.com/cebcar/&lt;Project&gt;/issues/$1
 
 #### Git
 - [ _ ] Enable staging area
@@ -194,11 +193,11 @@
   - [x] Lowercased
   - replace spaces with '-'
 
-##### Tasks: Servers: server GitHub
-- add Server GitHub
-- connect to server GitHub
-- General: provide credentials to connect to GitHub project; test
-- commit message (omit quotes): &lt;pr&gt;#${number}-${summary}"| "
+##### Tasks: Servers: server for GitHub repo
+- add new server (`+` or cmd-N)
+  - supply GitHub Organization and Repo name; paste in Personal Access Token
+  - `Test` to verify connection; Apply
+- commit message (omit quotes): &lt;pr&gt;"#${number}-${summary}| "
 
 ### Dialogs
 #### Print
