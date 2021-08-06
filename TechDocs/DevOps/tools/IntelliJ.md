@@ -285,14 +285,13 @@ Features Include:
   - add new server (`+` or cmd-N); supply GitHub Organization and Repo name; paste in token
   - `Test` to verify connection; Apply
 
-#### configure VCS-related tools
+#### set project-specific configuration
+##### Tasks
 - configure [Tools: Tasks](#tasks)
-- configure [Tools: Servers: server GitHub][Tools: Tasks](#tasks-servers-server-github)
+- configure [Tools: Servers: server GitHub](#tasks-servers-server-github)
 
-#### configure Scopes
+##### Scopes
 - configure  [Appearance &amp; Behavior : Scopes](#scopes)
-
-#### add module .idea
 
 #### commit to Version Control
 - Tag and Commit
