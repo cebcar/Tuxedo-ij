@@ -249,6 +249,11 @@ Features Include:
 
 ### Conventions
 
+#### Settings Repository
+- IntelliJ platform supports settings that are shared across repositories
+- we use a shared settings repo at cebcar/ij-config
+
+#### Tasks
 - top-level Task normally named for an issue
   - &lt;Proj&gt;#&lt;issueNum&gt; &lt;issueSummary&gt;,
       using the full project and issue names as proposed by IntelliJ
