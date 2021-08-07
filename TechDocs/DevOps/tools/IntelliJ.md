@@ -22,7 +22,7 @@
 - config
   - file:*.xml
   - ||file:*.iml
-  - ||.gitignore||.gitconfig
+  - ||file:.gitignore||file:.gitconfig
   - &&!file:*/workspace.xml (!: exclude)
 - not included in any scope
   - LICENSE
