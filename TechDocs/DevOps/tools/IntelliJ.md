@@ -14,7 +14,6 @@
 
 ### Appearance & Behavior
 #### Scopes
-
 *all scopes are shared*
 - docs
    - file:*.md||file:*.html
@@ -80,11 +79,11 @@
   - Markdown: set from HTML
  
 #### File and Code Templates
-- tolwp (tool with profile)
+- c/tool
   - with $INDENT$=(non-breaking space)x8
     ```markdown
       # $TOOL_NAME$
-      [$TOOL_NAME$ Profile](#$TOOL_NAME$-profile)
+      (add link to Tool Profile section here)
       $INDENT$*$BLURB$*<br/>
       ## Tool $TOOL_NAME$
       
@@ -193,7 +192,8 @@
   - [x] Lowercased
   - replace spaces with '-'
 
-##### Tasks: Servers: server for GitHub repo
+##### Tasks: Servers
+add server for GitHub repo:
 - add new server (`+` or cmd-N)
   - supply GitHub Organization and Repo name; paste in Personal Access Token
   - `Test` to verify connection; Apply
@@ -287,10 +287,11 @@ Features Include:
 
 #### set project-specific configuration
 ##### Tasks
-- configure [Tools: Tasks](#tasks)
-- configure [Tools: Servers: server GitHub](#tasks-servers-server-github)
+- configure [Tools: Tasks](#intellij-tasks)
+- configure [Tools: Servers: server GitHub](#tasks-servers)
 
-##### Scopes
+##### Scopes config
+
 - configure  [Appearance &amp; Behavior : Scopes](#scopes)
 
 #### commit to Version Control
