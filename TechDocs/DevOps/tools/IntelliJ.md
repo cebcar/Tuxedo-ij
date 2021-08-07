@@ -16,7 +16,7 @@
 #### Scopes
 *all scopes are shared*
 - docs
-   - file:*.md||file:*.html
+  - file:*.md||file:*.html
 - scripts
   - file:*.zsh
 - config
@@ -26,7 +26,6 @@
   - &&!file:*/workspace.xml (!: exclude)
 - not included in any scope
   - LICENSE
-  - gitignore.txt (legacy)
 
 #### Quick Lists
 - VCS Workflow
@@ -175,7 +174,7 @@
 - [ _ ] Show push dialog only when committing to protected branches
 
 - Protected branches: main
-- [ + ] Load protection rules from GItHub
+- [ + ] Load protection rules from GitHub
 - [ _ ] Use credential helper <br/>
 - Filter "Update Project" information by paths: All
 
