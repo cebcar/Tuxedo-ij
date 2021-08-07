@@ -249,6 +249,7 @@ Features Include:
 ### Conventions
 
 #### Settings Repository
+/todo/ recreate settings repo to better document configuration, especially for inspections /
 - IntelliJ platform supports settings that are shared across repositories
 - we use a shared settings repo at cebcar/ij-config
 
@@ -275,9 +276,9 @@ Features Include:
 - File : Manage IDE Settings : Settings Repository
   - select cebcar/ij-settings; overwrite local
 
-#### expand .gitignore
-- gitignore.io: add content for macOS and JetBrains
-- remove duplicate lines ".DS_Store" and "Workspace.xml"
+#### create .gitignore
+- new file with line !.gitignore
+- [gitignore.io](https://gitignore.io): add content for macOS and JetBrains
 - inspect
 
 #### connect to GitHub repo

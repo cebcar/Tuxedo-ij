@@ -11,12 +11,11 @@ shell tool @ /usr/bin/git<br/>
 ### **Git Configuration**<br/>
 
 #### gitignore
-##### starter gitignore content
-```
-  .DS_Store
-  workspace.xml
+- initial line:
+```.gitignore
   !.gitignore
 ```
+- then use [gitignore.io](http://gitignore.io) to add additional items, including macos and JetBrains
 
 ### **Git Customization &amp; Automation**<br/>
 
