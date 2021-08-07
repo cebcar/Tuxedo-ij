@@ -261,38 +261,38 @@ Features Include:
   - edit to &lt;ph&gt;&lt;issueNum&gt;-&lt;abbreviatedIssueName&gt;,
     where 'ph' is a hardcoded project name
 
-## Open Repository as Project
+### Open Repository as Project
 
-#### create project from repo
-- Get Repo from Version Control
-  - menu VCS/Git : Clone
-    - supply:
-      - repository URL
-      - directory of the new project
-    - press Enter or click Clone<br/><br/>
+[Create Personal Access Token](GitHub.md#create-personal-access-token) "JetBrains-GitHub Integration: &lt;projectName&gt;"; copy content to clipboard
 
-- Settings: connect to repository
-  - File : Manage IDE Settings : Settings Repository
-    - select cebcar/ij-settings; overwrite local
+#### get repository from Version Control
+- *close open project, if any, to get welcome screen with 'get from VCS' option*
+- supply:
+  - repository URL
+  - directory of the new project
+- press Enter or click Clone<br/><br/>
+
+#### connect to settings repository
+- File : Manage IDE Settings : Settings Repository
+  - select cebcar/ij-settings; overwrite local
 
 #### expand .gitignore
-
-- gitignore.io: add content for macOS and JetBrains; inspect; remove duplicate line .DS_Store
+- gitignore.io: add content for macOS and JetBrains
+- remove duplicate lines ".DS_Store" and "Workspace.xml"
+- inspect
 
 #### connect to GitHub repo
-- [Create Personal Access Token](GitHub.md#create-personal-access-token) "JetBrains-GitHub Integration: &lt;projectName&gt;"; copy content to clipboard
 - from Preferences : Tools : Tasks : Servers :
   - add new server (`+` or cmd-N); supply GitHub Organization and Repo name; paste in token
   - `Test` to verify connection; Apply
 
 #### set project-specific configuration
-##### Tasks
+- configure [GitHub](#github)
+- configure [Issue Navigation](#issue-navigation)
 - configure [Tools: Tasks](#intellij-tasks)
 - configure [Tools: Servers: server GitHub](#tasks-servers)
-
-##### Scopes config
-
-- configure  [Appearance &amp; Behavior : Scopes](#scopes)
+- configure [Appearance &amp; Behavior : Scopes](#scopes)
+- configure [Git](#git)
 
 #### commit to Version Control
 - Tag and Commit
