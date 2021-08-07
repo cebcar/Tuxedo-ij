@@ -299,6 +299,11 @@ Features Include:
   - add annotated tag, normally "vYYMM.0.1" for a new project, with message
 - commit; push
   
+### Diff with External Files
+- View | Compare with ... (cD)
+  - scroll to view each file
+  - WARNING: down arrow goes to the next file
+
 ## Special Documentation Files
 
 ### Workflows
