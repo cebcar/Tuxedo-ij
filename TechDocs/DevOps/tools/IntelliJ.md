@@ -66,11 +66,11 @@
 
 ### Editor
 #### General
-^^
-- Smart Keys
+
+#### Smart Keys
   - *use CamelHumps*
     - [+] use "CamelHumps" words
-    - [+] honor "CamelHumps" word settings when selecting on double click
+    - [_] honor "CamelHumps" word settings when selecting on double click
  
 #### Code Style
 - *indentation 2 for html, markdown*
