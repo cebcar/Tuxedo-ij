@@ -46,3 +46,9 @@ shell tool @ /usr/bin/git<br/>
 #### Revert just-committed merge
 
 > git revert -m 1 &lt;merge-commit-hash&gt;
+
+### Directories
+#### remove non-empty directory with all contents
+```shell
+rm -rf <dirname>
+```
