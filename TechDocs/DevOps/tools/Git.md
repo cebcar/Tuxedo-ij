@@ -24,6 +24,7 @@ shell tool @ /usr/bin/git<br/>
 ## Using Git<br/>
 
 ## Git Tasks
+
 ### Working with Remote
 #### Push branch to upstream
 > git push --set-upstream (-u) origin &lt;branch&gt;
@@ -34,9 +35,11 @@ shell tool @ /usr/bin/git<br/>
   - create annotated tag (requires comment)
   > git tag -a &lt;tagName&gt; -m &lt;comment&gt;
 
-### Working with Remote Branches
+### Branches
 #### Push Remote Branch
 > git push --set-upstream (-u) origin &lt;branch&gt;
+#### list branches sorted by date
+> git for-each-ref --sort=committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'
 
 ### Merging
 #### Revert just-committed merge
