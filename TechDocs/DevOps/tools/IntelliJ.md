@@ -261,6 +261,9 @@ Features Include:
   - edit to &lt;ph&gt;&lt;issueNum&gt;-&lt;abbreviatedIssueName&gt;,
     where 'ph' is a hardcoded project name
 
+#### folder .cebcar
+- folder .cebcar, at root level of repository, is available for use by scripting operations
+
 ### Open Repository as Project
 
 [Create Personal Access Token](GitHub.md#create-personal-access-token) "JetBrains-GitHub Integration: &lt;projectName&gt;"; copy content to clipboard
@@ -277,7 +280,11 @@ Features Include:
   - select cebcar/ij-settings; overwrite local
 
 #### create .gitignore
-- new file with line !.gitignore
+- new file to:
+  - do not ignore .gitignore
+    >!.gitignore
+  - ignore folder .cebcar
+    > .cebcar
 - [gitignore.io](https://gitignore.io): add content for macOS and JetBrains
 - inspect
 

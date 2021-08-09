@@ -11,9 +11,10 @@ shell tool @ /usr/bin/git<br/>
 ### **Git Configuration**<br/>
 
 #### gitignore
-- initial line:
+- initial lines:
 ```.gitignore
   !.gitignore
+  .cebcar
 ```
 - then use [gitignore.io](http://gitignore.io) to add additional items, including macos and JetBrains
 
