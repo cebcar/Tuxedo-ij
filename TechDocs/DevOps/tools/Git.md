@@ -42,9 +42,14 @@ shell tool @ /usr/bin/git<br/>
 #### list branches sorted by date
 > git for-each-ref --sort=committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'
 
-### Merging
-#### Revert just-committed merge
+### Rebase
+- reapply commits on top of another base tip
+> git rebase
+- edit list of the commits before rebasing; can also be used to split commits
+> git rebase -i (--interactive)
 
+### Merge
+#### Revert just-committed merge
 > git revert -m 1 &lt;merge-commit-hash&gt;
 
 ### Directories
