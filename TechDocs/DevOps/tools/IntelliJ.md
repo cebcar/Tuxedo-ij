@@ -246,6 +246,10 @@ Features Include:
 - stashes (or shelves) existing changes when switching between branches
 - available automatic time tracking per Task
 
+## directory .idea
+- JetBrains configuration information is stored in folder .idea at project root.
+- Its contents are automatically version-controlled.
+
 ### Conventions
 
 #### Settings Repository
@@ -280,7 +284,7 @@ Features Include:
   - select cebcar/ij-settings; overwrite local
 
 #### create .gitignore
-- new file to:
+- new file:
   - do not ignore .gitignore
     >!.gitignore
   - ignore folder .cebcar
