@@ -292,7 +292,7 @@ Features Include:
 - [gitignore.io](https://gitignore.io): add content for macOS and JetBrains
 - inspect
 
-#### connect to GitHub repo
+#### configure connection to GitHub repo
 - from Preferences : Tools : Tasks : Servers :
   - add new server (`+` or cmd-N); supply GitHub Organization and Repo name; paste in token
   - `Test` to verify connection; Apply
