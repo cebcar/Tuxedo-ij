@@ -14,16 +14,10 @@ WebApp @ https://github.com<br/>
   - GitHub : ‘cebcar’ : New
     - supply repo Name and Description
     - make repository “Public”
-    - add placeholder .gitignore; "Scala" is very short
+    - do not add .gitignore
     - initialize repo with a README
     - add license, normally MIT
   - create
-- change .gitignore content to:
-```
-  .DS_Store
-  workspace.xml 
-  !.gitignore
-```
 
 - edit Repository Settings
   - use cebcar-settings - see github-repository-settings below(@link)<br/><br/>

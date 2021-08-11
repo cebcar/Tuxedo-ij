@@ -14,20 +14,18 @@
 
 ### Appearance & Behavior
 #### Scopes
-
 *all scopes are shared*
 - docs
-   - file:*.md||file:*.html
+  - file:*.md||file:*.html
 - scripts
   - file:*.zsh
 - config
   - file:*.xml
   - ||file:*.iml
-  - ||.gitignore||.gitconfig
+  - ||file:.gitignore||file:.gitconfig
   - &&!file:*/workspace.xml (!: exclude)
 - not included in any scope
   - LICENSE
-  - gitignore.txt (legacy)
 
 #### Quick Lists
 - VCS Workflow
@@ -68,11 +66,11 @@
 
 ### Editor
 #### General
-^^
-- Smart Keys
+
+#### Smart Keys
   - *use CamelHumps*
     - [+] use "CamelHumps" words
-    - [+] honor "CamelHumps" word settings when selecting on double click
+    - [_] honor "CamelHumps" word settings when selecting on double click
  
 #### Code Style
 - *indentation 2 for html, markdown*
@@ -80,11 +78,11 @@
   - Markdown: set from HTML
  
 #### File and Code Templates
-- tolwp (tool with profile)
+- c/tool
   - with $INDENT$=(non-breaking space)x8
     ```markdown
       # $TOOL_NAME$
-      [$TOOL_NAME$ Profile](#$TOOL_NAME$-profile)
+      (add link to Tool Profile section here)
       $INDENT$*$BLURB$*<br/>
       ## Tool $TOOL_NAME$
       
@@ -159,46 +157,42 @@
 - [ + ] Highlight files from non-active changelist
 
 #### Issue Navigation
-*click on IntelliJ issue link to show matching issue in GitHub*
 - issue pattern: &lt;ProjectName&gt;-([\d]+)
-  - link to GitHub issue: https://github.com/cebcar/DevOps/issues/$1
+  - links to GitHub issue: https://github.com/cebcar/&lt;Project&gt;/issues/$1
 
 #### Git
 - [ _ ] Enable staging area
-- [ _ ] Commit automatically on cherry-pick
-- [ + ] add message suffix "Cherry picked from hash" when pushing to protected branches
+- [ + ] Add the "Cherry picked from &lt;hash&gt;" suffix when picking commits pushed to protected branches
 - [ + ] Warn if CLRF line separators are about to be committed
 - [ + ] Warn when committing in detached HEAD or during release
 - Explicitly check for incoming commits on remotes: Auto
-- Update method: Merge
+- Update method: Rebase
 - Clean working tree using: Stash
 - [ _ ] Auto update if push from the current branch was rejected
 - [ + ] Show Push dialog for Commit and Push
 - [ _ ] Show push dialog only when committing to protected branches
-
 - Protected branches: main
-- [ + ] Load protection rules from GItHub
+- [ + ] Load protection rules from GitHub
 - [ _ ] Use credential helper <br/>
 - Filter "Update Project" information by paths: All
 
 #### GitHub
-- "+" button: try failed because could not replace account 'carolclark' with 'cebcar'
 - provide GitHub credentials to connect
+- [ _ ] Clone GitHub repositories using SSH
 
 ### Tools
-*/TODO/ extraneous backslashes sometimes appear in Tools content*
-
 #### Tasks
 - Changelist name format: ${project}#${number}: ${summary}
 - Feature branch name format: &lt;pr&gt;${number}-${summary}
   - [x] Lowercased
   - replace spaces with '-'
 
-##### Tasks: Servers: server GitHub
-- add Server GitHub
-- connect to server GitHub
-- General: provide credentials to connect to GitHub project; test
-- commit message: &lt;pr&gt;#${number}-${summary}"| "
+##### Tasks: Servers
+add server for GitHub repo:
+- add new server (`+` or cmd-N)
+  - supply GitHub Organization and Repo name; paste in Personal Access Token
+  - `Test` to verify connection; Apply
+- commit message (omit quotes): &lt;pr&gt;"#${number}-${summary}| "
 
 ### Dialogs
 #### Print
@@ -248,8 +242,18 @@ Features Include:
 - stashes (or shelves) existing changes when switching between branches
 - available automatic time tracking per Task
 
+## directory .idea
+- JetBrains configuration information is stored in folder .idea at project root.
+- Its contents are automatically version-controlled.
+
 ### Conventions
 
+#### Settings Repository
+/todo/ recreate settings repo to better document configuration, especially for inspections /
+- IntelliJ platform supports settings that are shared across repositories
+- we use a shared settings repo at cebcar/ij-config
+
+#### Tasks
 - top-level Task normally named for an issue
   - &lt;Proj&gt;#&lt;issueNum&gt; &lt;issueSummary&gt;,
       using the full project and issue names as proposed by IntelliJ
@@ -257,44 +261,56 @@ Features Include:
   - edit to &lt;ph&gt;&lt;issueNum&gt;-&lt;abbreviatedIssueName&gt;,
     where 'ph' is a hardcoded project name
 
-## Open Repository as Project
+#### folder .cebcar
+- folder .cebcar, at root level of repository, is available for use by scripting operations
 
-#### create project from repo
-- Get Repo from Version Control
-  - menu VCS/Git : Clone
-    - supply:
-      - repository URL
-      - directory of the new project
-    - press Enter or click Clone<br/><br/>
+### Open Repository as Project
 
-- Settings: connect to repository
-  - File : Manage IDE Settings : Settings Repository
-    - select cebcar/ij-settings; overwrite local
+[Create Personal Access Token](GitHub.md#create-personal-access-token) "JetBrains-GitHub Integration: &lt;projectName&gt;"; copy content to clipboard
 
-#### expand .gitignore
+#### get repository from Version Control
+- *close open project, if any, to get welcome screen with 'get from VCS' option*
+- supply:
+  - repository URL
+  - directory of the new project
+- press Enter or click Clone<br/><br/>
 
-- gitignore.io: add content for macOS and JetBrains; inspect; remove duplicate line .DS_Store
+#### connect to settings repository
+- File : Manage IDE Settings : Settings Repository
+  - select cebcar/ij-settings; overwrite local
 
-#### connect to GitHub repo
-- [Create Personal Access Token](GitHub.md#create-personal-access-token) "JetBrains-GitHub Integration: &lt;projectName&gt;"; copy content to clipboard
+#### create .gitignore
+- new file:
+  - do not ignore .gitignore
+    >!.gitignore
+  - ignore folder .cebcar
+    > .cebcar
+- [gitignore.io](https://gitignore.io): add content for macOS and JetBrains
+- inspect
+
+#### configure connection to GitHub repo
 - from Preferences : Tools : Tasks : Servers :
   - add new server (`+` or cmd-N); supply GitHub Organization and Repo name; paste in token
   - `Test` to verify connection; Apply
 
-#### configure VCS-related tools
-- configure [Tools: Tasks](#tasks)
-- configure [Tools: Servers: server GitHub][Tools: Tasks](#tasks-servers-server-github)
-
-#### configure Scopes
-- configure  [Appearance &amp; Behavior : Scopes](#scopes)
-
-#### add module .idea
+#### set project-specific configuration
+- configure [GitHub](#github)
+- configure [Issue Navigation](#issue-navigation)
+- configure [Tools: Tasks](#intellij-tasks)
+- configure [Tools: Servers: server GitHub](#tasks-servers)
+- configure [Appearance &amp; Behavior : Scopes](#scopes)
+- configure [Git](#git)
 
 #### commit to Version Control
 - Tag and Commit
   - add annotated tag, normally "vYYMM.0.1" for a new project, with message
 - commit; push
   
+### Diff with External Files
+- View | Compare with ... (cD)
+  - scroll to view each file
+  - WARNING: down arrow goes to the next file
+
 ## Special Documentation Files
 
 ### Workflows
