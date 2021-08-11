@@ -162,29 +162,25 @@
 
 #### Git
 - [ _ ] Enable staging area
-- [ _ ] Commit automatically on cherry-pick
-- [ + ] add message suffix "Cherry picked from hash" when pushing to protected branches
+- [ + ] Add the "Cherry picked from &lt;hash&gt;" suffix when picking commits pushed to protected branches
 - [ + ] Warn if CLRF line separators are about to be committed
 - [ + ] Warn when committing in detached HEAD or during release
 - Explicitly check for incoming commits on remotes: Auto
-- Update method: Merge
+- Update method: Rebase
 - Clean working tree using: Stash
 - [ _ ] Auto update if push from the current branch was rejected
 - [ + ] Show Push dialog for Commit and Push
 - [ _ ] Show push dialog only when committing to protected branches
-
 - Protected branches: main
 - [ + ] Load protection rules from GitHub
 - [ _ ] Use credential helper <br/>
 - Filter "Update Project" information by paths: All
 
 #### GitHub
-- "+" button: try failed because could not replace account 'carolclark' with 'cebcar'
 - provide GitHub credentials to connect
+- [ _ ] Clone GitHub repositories using SSH
 
 ### Tools
-*/TODO/ extraneous backslashes sometimes appear in Tools content*
-
 #### Tasks
 - Changelist name format: ${project}#${number}: ${summary}
 - Feature branch name format: &lt;pr&gt;${number}-${summary}
