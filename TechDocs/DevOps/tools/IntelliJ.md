@@ -150,6 +150,10 @@
 ### Version Control
 - Version Control System: Git
 
+#### GitHub
+> ALERT: do NOT add an account from this page; it will automatically add a PERSONAL account, which will not work
+- [ _ ] Clone GitHub repositories using SSH
+
 #### Changelists
 - [ + ] Track changed blocks in text files separately
 - [ + ] Show dialogue on attempt to edit file from non-active changelist
@@ -175,10 +179,6 @@
 - [ + ] Load protection rules from GitHub
 - [ _ ] Use credential helper <br/>
 - Filter "Update Project" information by paths: All
-
-#### GitHub
-- provide GitHub credentials to connect
-- [ _ ] Clone GitHub repositories using SSH
 
 ### Tools
 #### Tasks
