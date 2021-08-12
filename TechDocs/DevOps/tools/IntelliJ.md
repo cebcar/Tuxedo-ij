@@ -145,10 +145,15 @@
 ### Plugins
 - Plugins
   - Task Management : enable (redundant? configured for Tuxedo 08 Feb 2021 via Tools &gt; Servers, Tasks)
-    - *to configure, see [Tools : Tasks](#tools)*
+    - *to configure, see Tasks : Tasks
+      - /todo/ fix link?? seemed fine/
 
 ### Version Control
 - Version Control System: Git
+
+#### GitHub
+> ALERT: do NOT add an account from this page; it will automatically add a PERSONAL account, which will not work
+- [ _ ] Clone GitHub repositories using SSH
 
 #### Changelists
 - [ + ] Track changed blocks in text files separately
@@ -175,10 +180,6 @@
 - [ + ] Load protection rules from GitHub
 - [ _ ] Use credential helper <br/>
 - Filter "Update Project" information by paths: All
-
-#### GitHub
-- provide GitHub credentials to connect
-- [ _ ] Clone GitHub repositories using SSH
 
 ### Tools
 #### Tasks
@@ -294,12 +295,15 @@ Features Include:
   - `Test` to verify connection; Apply
 
 #### set project-specific configuration
-- configure [GitHub](#github)
-- configure [Issue Navigation](#issue-navigation)
-- configure [Tools: Tasks](#intellij-tasks)
-- configure [Tools: Servers: server GitHub](#tasks-servers)
-- configure [Appearance &amp; Behavior : Scopes](#scopes)
-- configure [Git](#git)
+###### Version Control
+- [GitHub](#github)
+- [Issue Navigation](#issue-navigation)
+- [Git](#git)
+###### Tools
+- [Tasks](#intellij-tasks)
+- [Tools: Servers: server GitHub](#tasks-servers)
+###### Appearance &amp; Behavior
+- [Scopes](#scopes)
 
 #### commit to Version Control
 - Tag and Commit
