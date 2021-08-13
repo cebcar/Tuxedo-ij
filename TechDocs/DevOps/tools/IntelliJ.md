@@ -146,8 +146,7 @@
 - Plugins
   - Task Management : enable (redundant? configured for Tuxedo 08 Feb 2021 via Tools &gt; Servers, Tasks)
     - *to configure, see Tasks : Tasks
-      - /todo/ fix link?? seemed fine/
-
+    - 
 ### Version Control
 - Version Control System: Git
 
@@ -250,6 +249,7 @@ Features Include:
 ### Conventions
 
 #### Settings Repository
+
 /todo/ recreate settings repo to better document configuration, especially for inspections /
 - IntelliJ platform supports settings that are shared across repositories
 - we use a shared settings repo at cebcar/ij-config
