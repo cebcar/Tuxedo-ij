@@ -34,7 +34,15 @@ notes on todo items may be added to documents
 ```plaintext
 /todo[-qualifier]/ further information /
 ```
-Todo items and be reviewed and addressed by searching for todo tag, without second "/"
+Todo items can be reviewed and addressed by searching for todo tag, without second "/" <br/><br/>
+
+```plaintext
+NOTE:
+IntelliJ supports embedding formatted TODO comments in document
+- we and, per Stack Ovbrflow, others have tried and failed to use this feature for Markdown  
+  - it may work only for some languages including Java/Kotlin
+```
+<br/>
 
 ## Issue Labels
 | group | # | color | label | description |
