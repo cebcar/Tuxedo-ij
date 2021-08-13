@@ -20,11 +20,29 @@ At this time, its facets are:
   - extensive build tools for all expected coding and documentation requirements
 <br/><br/>
 
-Repo Project files are tracked by git repositories hosted by GitHub. <br/>
-The code record is the underlying git repository, <br/>
-and repository problems may be dealt with using command-line git.
+Git repository
+- Facets share access to the underlying git repository and its issues <br/>
+  - The code record is the git repository, and <br/>
+    issues specific to the repository may be dealt with using command-line git.
 
 <div style="page-break-after: always;"></div>
+
+## Conventions
+### todo
+notes on todo items may be added to documents
+- format
+```plaintext
+/todo[-qualifier]/ further information /
+```
+Todo items can be reviewed and addressed by searching for todo tag, without second "/" <br/><br/>
+
+```plaintext
+NOTE:
+IntelliJ supports embedding formatted TODO comments in document
+- we and, per Stack Ovbrflow, others have tried and failed to use this feature for Markdown  
+  - it may work only for some languages including Java/Kotlin
+```
+<br/>
 
 ## Issue Labels
 | group | # | color | label | description |
