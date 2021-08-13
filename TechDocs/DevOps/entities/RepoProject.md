@@ -27,6 +27,15 @@ Git repository
 
 <div style="page-break-after: always;"></div>
 
+## Conventions
+### todo
+notes on todo items may be added to documents
+- format
+```plaintext
+/todo[-qualifier]/ further information /
+```
+Todo items and be reviewed and addressed by searching for todo tag, without second "/"
+
 ## Issue Labels
 | group | # | color | label | description |
 |:---|---:|:---:|:---:|:---|
