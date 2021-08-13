@@ -20,9 +20,10 @@ At this time, its facets are:
   - extensive build tools for all expected coding and documentation requirements
 <br/><br/>
 
-Repo Project files are tracked by git repositories hosted by GitHub. <br/>
-The code record is the underlying git repository, <br/>
-and repository problems may be dealt with using command-line git.
+Git repository
+- Facets share access to the underlying git repository and its issues <br/>
+  - The code record is the git repository, and <br/>
+    issues specific to the repository may be dealt with using command-line git.
 
 <div style="page-break-after: always;"></div>
 
