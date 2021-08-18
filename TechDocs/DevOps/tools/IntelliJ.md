@@ -76,40 +76,39 @@
 - *indentation 2 for html, markdown*
   - HTML: Tab Size 2; Indent 2; Continuation Indent 4
   - Markdown: set from HTML
- 
-#### File and Code Templates
-- c/tool
-  - with $INDENT$=(non-breaking space)x8
-    ```markdown
-      # $TOOL_NAME$
-      (add link to Tool Profile section here)
-      $INDENT$*$BLURB$*<br/>
-      ## Tool $TOOL_NAME$
-      
-      $END$<br/> krista can't test it here beca this file opens at oneuse it won't fit this file
-      
-      ## *$TOOL_NAME$ Profile*
-      $INDENT$$TOOLTYPE$ @ $LOCATION$<br/>$INDENT%*$BLURB$*<br/>
-      
-      **Version**: $VERSION$<br/>
-      **Source**: $SOURCE$<br/>
-      **Obtained**: $METHOD$; $DATE_PRICE$<br/>
-      **License**: $LICENSE$<br/>
-      **Critical Data**: $CRITICALDATA$<br/>
-      **Installation**: $INSTALLATION$<br/>
-      **Documentation**: $DOCUMENTATION$<br/>
-      
-      ### $TOOL_NAME$ Configuration
-      ### $TOOL_NAME$ Automation
-      ### $TOOL_NAME$ Shortcuts
-      ### $TOOL_NAME$ Alternatives Considered 
-    ```
 
-##### color code and swatch, with column separator
-```plaintext
-#$COLOR_CODE$ | < span style="background-color: #$COLOR_CODE$">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-```
-*(to enter in code, remove space before "span" directive)*
+#### Live Templates
+##### cd.tool
+- tool document with profile
+  - with $INDENT$=(non-breaking space)x8
+  ```plaintext
+  # $TOOL_NAME$
+  $INDENT$[$TOOL_NAME$ Tool Profile](#$TOOL_NAME_LC$-profile)<br/>
+  $INDENT$*$BLURB$*<br/>
+  ## Tool $TOOL_NAME$
+     $END$<br/>
+     ## *$TOOL_NAME$ Profile*
+  $INDENT$$TOOLTYPE$ @ $LOCATION$<br/>$INDENT$*$BLURB$*<br/>
+  
+  **Version**: $VERSION$<br/>
+  **Source**: $SOURCE$<br/>
+  **Obtained**: $METHOD$; $DATE_PRICE$<br/>
+  **License**: $LICENSE$<br/>
+  **Critical Data**: $CRITICALDATA$<br/>
+  **Installation**: $INSTALLATION$<br/>
+  **Documentation**: $DOCUMENTATION$<br/>
+  
+  ### $TOOL_NAME$ Configuration
+  ### $TOOL_NAME$ Automation
+  ### $TOOL_NAME$ Shortcuts
+  ### $TOOL_NAME$ Alternatives Considered
+  ```
+
+##### cd.color
+- color code and swatch, with column separator
+  ```plaintext
+  #$COLOR_CODE$ | <span style="background-color: #$COLOR_CODE$">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  ```
 
 #### Proofreading
 ##### for Documentation Files (*.md, *.html)
@@ -238,15 +237,35 @@ The Task workflow helps keep our workflow anchored.
 Features Include:
 - automatically offers configurable suggestions for branch and changelist names
 - saves and restores context
-- context: branch, open files, favorites, breakpoints, tool window status
+- maintains context: branch, open files, favorites, breakpoints, tool window status
 - stashes (or shelves) existing changes when switching between branches
 - available automatic time tracking per Task
+
+### Tasks Implementation
+- top-level Task normally named for an issue
+  - &lt;Proj&gt;#&lt;issueNum&gt; &lt;issueSummary&gt;,
+    using the full project and issue names as proposed by IntelliJ
+- branch name abbreviated by hand from IntelliJ-proposed branch name
+  - edit to &lt;pr&gt;&lt;issueNum&gt;-&lt;abbreviatedIssueName&gt;,
+    where 'pr' is a hardcoded project name
 
 ## directory .idea
 - JetBrains configuration information is stored in folder .idea at project root.
 - Its contents are automatically version-controlled.
 
-### Conventions
+## Conventions
+
+#### Live Templates
+- We use WebStorm Live Templates for both:
+  - adding standard content to files
+  - creating new files
+
+- WebStorm supports File and Code Templates for creating new files.
+  - However, we have not been able to:
+    - reliably add files via template without
+      having the New File menu items sometimes disappear
+      - apparently, however, others have made it work
+    - **use the keyboard** to select a menu option to create a new file by template
 
 #### Live Templates
 - We use WebStorm Live Templates for both:
@@ -266,17 +285,23 @@ Features Include:
 - IntelliJ platform supports settings that are shared across repositories
 - we use a shared settings repo at cebcar/ij-config
 
-#### Tasks
-- top-level Task normally named for an issue
-  - &lt;Proj&gt;#&lt;issueNum&gt; &lt;issueSummary&gt;,
-      using the full project and issue names as proposed by IntelliJ
-- branch name abbreviated by hand from IntelliJ-proposed branch name
-  - edit to &lt;ph&gt;&lt;issueNum&gt;-&lt;abbreviatedIssueName&gt;,
-    where 'ph' is a hardcoded project name
+#### Templates
+- We use WebStorm Live Templates for both:
+  - adding standard content to files
+  - creating new files
+ 
+- WebStorm supports File and Code Templates for creating new files.
+  - However, we have not been able to:
+    - reliably add files via template without
+      having the New File menu items sometimes disappear
+      - apparently, however, others have made it work
+    - *use the keyboard to select a menu option to create a new file by template 
 
 #### folder .cebcar
 - folder .cebcar, at root level of repository, is available for use by scripting operations
 
+
+## Using WebStorm
 ### Open Repository as Project
 
 [Create Personal Access Token](GitHub.md#create-personal-access-token) "JetBrains-GitHub Integration: &lt;projectName&gt;"; copy content to clipboard
@@ -307,21 +332,27 @@ Features Include:
   - `Test` to verify connection; Apply
 
 #### set project-specific configuration
-###### Version Control
-- [GitHub](#github)
-- [Issue Navigation](#issue-navigation)
-- [Git](#git)
-###### Tools
-- [Tasks](#intellij-tasks)
-- [Tools: Servers: server GitHub](#tasks-servers)
-###### Appearance &amp; Behavior
-- [Scopes](#scopes)
+- Version Control
+  - [GitHub](#github)
+  - [Issue Navigation](#issue-navigation)
+  - [Git](#git)
+- Tools
+  - [Tasks](#intellij-tasks)
+  - [Tools: Servers: server GitHub](#tasks-servers)
+- Appearance &amp; Behavior
+  - [Scopes](#scopes)
 
 #### commit to Version Control
 - Tag and Commit
   - add annotated tag, normally "vYYMM.0.1" for a new project, with message
 - commit; push
   
+### Create a New File
+  - create new empty file (menu item File | New | File, with keycode rcN)
+  - supply the full filename with extension,
+    ignoring any complaints that the file has no name yet
+  - use the corresponding Live Template to add default file content 
+
 ### Diff with External Files
 - View | Compare with ... (cD)
   - scroll to view each file
@@ -340,6 +371,6 @@ much like groups of steps in code.
 ```
 
 This syntax creates issues with the 'Unpaired symbol' Inspection.
-To avoid these errors, disable 'Unpaired Symbol' for *.md and *.html files.
+Could address by adding a Scope for Workflows.
 
 <button onclick="window.print()">`Print Button`</button>
