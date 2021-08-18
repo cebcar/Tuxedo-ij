@@ -227,7 +227,7 @@ add server for GitHub repo:
 
 # Using IntelliJ Platform IDEs
 
-## Tasks
+## IntelliJ Tasks
 
 We use IntelliJ [Tasks](https://www.jetbrains.com/help/idea/managing-tasks-and-context.html)
   to organize work into smaller tasks.
@@ -254,6 +254,18 @@ Features Include:
 - Its contents are automatically version-controlled.
 
 ## Conventions
+
+#### Live Templates
+- We use WebStorm Live Templates for both:
+  - adding standard content to files
+  - creating new files
+
+- WebStorm supports File and Code Templates for creating new files.
+  - However, we have not been able to:
+    - reliably add files via template without
+      having the New File menu items sometimes disappear
+      - apparently, however, others have made it work
+    - **use the keyboard** to select a menu option to create a new file by template
 
 #### Settings Repository
 
