@@ -1,11 +1,11 @@
 # IntelliJ IDEA
-  - Application @ ~/Applications/JetBrains Toolbox/&lt;IDEName&gt;  
-    *configuration and functionality shared by all IntelliJ Platform IDEs*
-  - Version: WebStorm 2020.1.1
-  - Source: JetBrains Subscription
-  - Critical Data: configuration @ ~/Application Support/&lt;IDEName&gt;&lt;major&gt;.&lt;minor&gt;
-  - Installation: via JetBrains Toolbox
-  - Documentation: [Discover IntelliJ IDEA](https://www.jetbrains.com/help/idea/discover-intellij-idea.html)
+- Application @ ~/Applications/JetBrains Toolbox/&lt;IDEName&gt;  
+  *configuration and functionality shared by all IntelliJ Platform IDEs*
+- Version: WebStorm 2020.1.1
+- Source: JetBrains Subscription
+- Critical Data: configuration @ ~/Application Support/&lt;IDEName&gt;&lt;major&gt;.&lt;minor&gt;
+- Installation: via JetBrains Toolbox
+- Documentation: [Discover IntelliJ IDEA](https://www.jetbrains.com/help/idea/discover-intellij-idea.html)
 
 ## IntelliJ Platform Configuration
 
@@ -68,10 +68,10 @@
 #### General
 
 #### Smart Keys
-  - *use CamelHumps*
-    - [+] use "CamelHumps" words
-    - [_] honor "CamelHumps" word settings when selecting on double click
- 
+- *use CamelHumps*
+  - [+] use "CamelHumps" words
+  - [_] honor "CamelHumps" word settings when selecting on double click
+
 #### Code Style
 - *indentation 2 for html, markdown*
   - HTML: Tab Size 2; Indent 2; Continuation Indent 4
@@ -130,7 +130,7 @@
 - Spelling
   - [+]use single dictionary for storing words: application-level
     - *apparently: use hand-editing to populate a custom dictionary,
-    presumably from words saved to a built-in wordlist*
+      presumably from words saved to a built-in wordlist*
     - *suggests we could add cebcar/cebcar.DIC later*
 - Possible Typo
   - [_] hell/shell (he'll she'll)
@@ -145,7 +145,7 @@
 - Plugins
   - Task Management : enable (redundant? configured for Tuxedo 08 Feb 2021 via Tools &gt; Servers, Tasks)
     - *to configure, see Tasks : Tasks
-    - 
+
 ### Version Control
 - Version Control System: Git
 
@@ -230,7 +230,7 @@ add server for GitHub repo:
 ## IntelliJ Tasks
 
 We use IntelliJ [Tasks](https://www.jetbrains.com/help/idea/managing-tasks-and-context.html)
-  to organize work into smaller tasks.
+to organize our work into tasks.
 
 The Task workflow helps keep our workflow anchored.
 
@@ -273,9 +273,16 @@ Features Include:
       - apparently, however, others have made it work
     - **use the keyboard** to select a menu option to create a new file by template
 
+#### Tasks
+- top-level Task normally named for an issue
+  - &lt;Proj&gt;#&lt;issueNum&gt; &lt;issueSummary&gt;,
+    using the full project and issue names as proposed by IntelliJ
+- branch name abbreviated by hand from IntelliJ-proposed branch name
+  - edit to &lt;ph&gt;&lt;issueNum&gt;-&lt;abbreviatedIssueName&gt;,
+    where 'ph' is a hardcoded project name
+
 #### folder .cebcar
 - folder .cebcar, at root level of repository, is available for use by scripting operations
-
 
 ## Using WebStorm
 ### Open Repository as Project
