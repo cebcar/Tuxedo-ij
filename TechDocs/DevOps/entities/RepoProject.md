@@ -76,7 +76,6 @@ IntelliJ supports embedding formatted TODO comments in document
 | | #FBCA04 &nbsp;&nbsp;<span style="background-color: #FBCA04">&nbsp;&nbsp;&nbsp;&nbsp;</span> | zsh | Z Shell |
 
 ## Tasks
-
 ### Create Repo Project
 
 - create a new GitHub repository; see [Create New Repository](../tools/GitHub.md#create-new-repository)

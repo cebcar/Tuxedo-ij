@@ -104,8 +104,8 @@
   ### $TOOL_NAME$ Alternatives Considered
   ```
 
-##### cd.color
-- color code and swatch, with column separator
+##### color code with swatch
+- cd.color
   ```plaintext
   #$COLOR_CODE$ | <span style="background-color: #$COLOR_CODE$">&nbsp;&nbsp;&nbsp;&nbsp;</span>
   ```
@@ -114,19 +114,19 @@
 ##### for Documentation Files (*.md, *.html)
 - *disable checks inconsistent with our technical writing style*
 - Grammar | Rules
-    - [_] Articles: article missing before a countable noun
-    - [?] Commas after conjunctive/linking adverbs in front of a new sentence
-      - *If we could edit the rule, we could maybe just exclude 'currently'.*
-    - [_] Loose punctuation mark.
-      - conflicts with braces anchoring workflows
-      ```
-        until done { steps
-          } done
-          ^
-      ```
-    - [_] singular noun + plural verb
-    - [_] Miscellaneous: hyphenated words
-      - fails 'hidden folder at top level of repo'
+  - [_] Articles: article missing before a countable noun
+  - [?] Commas after conjunctive/linking adverbs in front of a new sentence
+    - *If we could edit the rule, we could maybe just exclude 'currently'.*
+  - [_] Loose punctuation mark.
+    - conflicts with braces anchoring workflows
+    ```
+      until done { steps
+        } done
+        ^
+    ```
+  - [_] singular noun + plural verb
+  - [_] Miscellaneous: hyphenated words
+    - fails 'hidden folder at top level of repo'
 - Spelling
   - [+]use single dictionary for storing words: application-level
     - *apparently: use hand-editing to populate a custom dictionary,
@@ -273,13 +273,9 @@ Features Include:
       - apparently, however, others have made it work
     - **use the keyboard** to select a menu option to create a new file by template
 
-#### Tasks
-- top-level Task normally named for an issue
-  - &lt;Proj&gt;#&lt;issueNum&gt; &lt;issueSummary&gt;,
-    using the full project and issue names as proposed by IntelliJ
-- branch name abbreviated by hand from IntelliJ-proposed branch name
-  - edit to &lt;ph&gt;&lt;issueNum&gt;-&lt;abbreviatedIssueName&gt;,
-    where 'ph' is a hardcoded project name
+- Replacing Fields
+  - fields can be tabbed and replaced immediately after file creation
+  - search for "%[A-Za-z_]+%" to replace fields later
 
 #### folder .cebcar
 - folder .cebcar, at root level of repository, is available for use by scripting operations
@@ -329,12 +325,12 @@ Features Include:
 - Tag and Commit
   - add annotated tag, normally "vYYMM.0.1" for a new project, with message
 - commit; push
-  
+
 ### Create a New File
-  - create new empty file (menu item File | New | File, with keycode rcN)
-  - supply the full filename with extension,
-    ignoring any complaints that the file has no name yet
-  - use the corresponding Live Template to add default file content 
+- create new empty file (menu item File | New | File, with keycode rcN)
+- supply the full filename with extension,
+  ignoring any complaints that the file has no name yet
+- use the corresponding Live Template to add default file content
 
 ### Diff with External Files
 - View | Compare with ... (cD)
