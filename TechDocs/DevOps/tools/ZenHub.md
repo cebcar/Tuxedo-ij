@@ -40,7 +40,7 @@ We use primarily single-repository workspaces
 ### ZenHub Workspaces
 
 #### Create New Workspace
-- from zenhub.com
+- from ZenHub.com
   <br/>&nbsp;&nbsp;
   *shows an existing Workspace if one exists*<br/>
   - click Workspace Switcher at top left (opposing arrows icon)
@@ -50,7 +50,7 @@ We use primarily single-repository workspaces
 
 ### Add Repo Project to ZenHub Workspace
 - if ZenHub Workspace for this project does not exist: [Create New Workspace](#create-new-workspace)
-- from Workspace @ zenhub.com
+- from Workspace @ ZenHub.com
   - choose Workspace Switcher at top left (opposing arrows icon)
   - select [Repo Project](../entities/RepoProject.md) to add
 
@@ -76,3 +76,15 @@ We use primarily single-repository workspaces
   - show the issue in GitHub (bottom right on the ZenHub Edit Issue display)
   - move the issue to the correct repo
   - return to ZenHub Board<br/><br/>
+
+### Sprint Implementation
+*Sprints will normally be created automatically by ZenHub, using the top of the Product Backlog.* <br/>
+*For now, we are doing that process manually.*
+- on the last day of a sprint
+  - close most 'Done' issues
+  - review Product Backlog
+    - verify sufficient content for next Sprint
+    - for each item: review content and estimate
+    - review prioritization
+  - until ZenHub automated Sprints:
+    - create next Sprint from content of Product Backlog
