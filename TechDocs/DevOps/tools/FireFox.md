@@ -1,3 +1,16 @@
+<style>
+table, th, td {
+border: 1px solid black;
+  border-collapse: collapse;
+}
+table {
+  empty-cells: show;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+</style>
 # FireFox
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FireFox Tool Profile](#firefox-tool-profile)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*free open-source cross-platform website browser*<br/>
@@ -22,6 +35,9 @@
 ### FireFox Configuration
 ### FireFox Automation
 ### FireFox Shortcuts
+This is a starter set of basic shortcuts.<br/>
+See [Keyboard shortcuts - Perform common Firefox tasks quickly](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly#w_navigation)
+for complete list.
 #### Navigation
 | sc | action | comments |
 |:--:|:--|:--|
@@ -40,7 +56,7 @@
 | (s)F6 | next/previous | popup... |
 | oReturn | save focused link | req config |
 | c+/- | zoom in/out | |
-| c0 | zoom reset | |### FireFox Alternatives Considered
+| c0 | zoom reset | |
 
 #### Search
 | sc | action | comments |
@@ -65,7 +81,70 @@
 | rsPageUp/Down | move tab left/right |
 | cDigit | go tab by number | c9: last |
 | rM | mute/unmute audio | |
+| cT | new tab | |
+| cN | new window | |
+| scP | new private window | |
+| scTab | Show All Tabs | cycles; req config |
+| scT | undo close tab | |
+| scN | undo close window | |
+| scT | move URL left or right | cursor in address bar |
 
+<div style="page-break-after: always;"></div>
+
+##### open address, search, or focused bookmark or link
+*^: foreground/background:*</br/>
+*&nbsp;&nbsp;reversed if "switch to immediately" is set*
+
+###### Open Address or Search
+| sc | action | comments |
+|:--:|:--|:--|
+| sReturn | in new window | |
+| (s)oReturn | from field | fg/(bg) |
+| (s)cReturn | from new tab | ^fg/(bg) |
+
+###### Open Focused Bookmark or Link
+| sc | action | comments |
+|:--:|:--|:--|
+| Return | current tab | |
+| sReturn | new window | |
+| (s)cReturn | bookmark in new tab | fg/(bg) |
+| (s)cReturn | link in new tab | ^(fg)/bg |
+
+##### History
+| sc | action | comments |
+|:--:|:--|:--|
+| scH | history sidebar | |
+| scDelete | clear recent history |
+
+<div style="page-break-after: always;"></div>
+##### Bookmarks
+| sc | action | comments |
+|:--:|:--|:--|
+| cD | bookmark this page | |
+| scD | bookmark all tabs | |
+| cB | Bookmarks sidebar | |
+| scB | show/hide Bookmarks toolbar | |
+| scO | show all bookmarks | Library window |
+| Space | bookmarks list | in blank field |
+| (type) | select/match bookmark |
+
+##### Miscellaneous
+| sc | action | comments |
+|:--:|:--|:--|
+| rReturn | complete .com address | |
+| sDelete | delete selected autocomplete entry | |
+| scF | toggle full screen | |
+| ocR | toggle reader mode | |
+| F7 | toggle caret browsing | |
+| cL | focus address bar | |
+| cR | focus search field in libary | |
+| F6 | focus either of above 2 items | |
+| Esc | stop Autoscroll mode | |
+| Esc | cancel drag-and-drop | |
+| Esc | clear search field | |
+| Esc | close a menu | |
+
+### FireFox Alternatives Considered
 #### Safari
 We used Safari for many years.
 However, its customization and Developer Support are no longer adequate, especially for Web Development.
