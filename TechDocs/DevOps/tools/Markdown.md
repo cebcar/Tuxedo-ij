@@ -49,5 +49,8 @@
   #$COLOR_CODE$&nbsp;<span style="background-color: #$COLOR_CODE$">&nbsp;&nbsp;&nbsp;&nbsp;</span>
   ```
 
-
-
+##### link to Tuxedo/.../DevOps
+- cd.devops
+  ```plaintext
+  https://github.com/cebcar/Tuxedo/blob/main/TechDocs/DevOps/
+  ```
