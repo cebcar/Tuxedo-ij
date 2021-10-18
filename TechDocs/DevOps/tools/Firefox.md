@@ -11,13 +11,13 @@ th, td {
   text-align: left;
 }
 </style>
-# FireFox
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FireFox Tool Profile](#firefox-tool-profile)<br/>
+# Firefox
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Firefox Tool Profile](#firefox-tool-profile)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*free open-source cross-platform website browser*<br/>
 
 <br/>
 
-## FireFox Tool Profile
+## Firefox Tool Profile
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web Browser @ /Applications<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*free open-source cross-platform website browser*<br/>
 
@@ -29,12 +29,12 @@ th, td {
 **Installation**: download; move to /Applications<br/>
 **Documentation**: <br/>
 - User Documentation: Mozilla: [Learn the Basics: get started](https://support.mozilla.org/en-US/products/firefox/get-started)
-- FireFox Developer Tools: Mozilla: [Firefox Developer Tools](https://firefox-dev.tools)
-- developing FireFox: Mozilla: [Firefox Source Tree Documentation](https://firefox-source-docs.mozilla.org/index.html)
+- Firefox Developer Tools: Mozilla: [Firefox Developer Tools](https://firefox-dev.tools)
+- developing Firefox: Mozilla: [Firefox Source Tree Documentation](https://firefox-source-docs.mozilla.org/index.html)
 
-### FireFox Configuration
-### FireFox Automation
-### FireFox Shortcuts
+### Firefox Configuration
+### Firefox Automation
+### Firefox Shortcuts
 This is a starter set of basic shortcuts.<br/>
 See [Keyboard shortcuts - Perform common Firefox tasks quickly](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly#w_navigation)
 for complete list.
@@ -144,7 +144,7 @@ for complete list.
 | Esc | clear search field | |
 | Esc | close a menu | |
 
-### FireFox Alternatives Considered
+### Firefox Alternatives Considered
 #### Safari
 We used Safari for many years.
 However, its customization and Developer Support are no longer adequate, especially for Web Development.
