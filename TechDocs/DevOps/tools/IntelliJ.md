@@ -203,6 +203,9 @@ add server for GitHub repo:
   - margins: .75 bottom to allow for footer; rest .5
 
 ## IntelliJ Customization &amp; Automation
+### Languages Used
+- [Markdown](https://github.com/cebcar/Tuxedo/blob/tx80-keymaps-html/TechDocs/DevOps/languages/markdown.md)
+- [HTML](https://github.com/cebcar/Tuxedo/blob/tx80-keymaps-html/TechDocs/DevOps/languages/html.md)
 
 ## IntelliJ Keymap Customization
 | Group | | | Action | Shortcut | Comment |
