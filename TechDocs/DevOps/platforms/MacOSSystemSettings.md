@@ -10,6 +10,7 @@ Zoom
 - Use Keyboard shortcuts to zoom: ON
 - Toggle Zoom: oc8 
 - Use scroll gesture with modifier key to zoom: hold &lt;control&gt;
-- Zoom Style: Picture-in-picture
+- Zoom Style: Full Screen
+  - Picture-in-picture also sometimes useful
 - Zoom In/Out: oc+/-
-- Enable Hover Text: hold &lt;command&gt;
+- Enable Hover Text: 24 pt; hold &lt;command&gt;
