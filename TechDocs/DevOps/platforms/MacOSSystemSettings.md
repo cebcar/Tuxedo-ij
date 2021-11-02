@@ -1,11 +1,11 @@
 # MacOS System Settings
 
-> NOTE: some settings may sometimes conflict with normal operation
+### Accessibility
+> NOTE: Accessibility settings may sometimes conflict with normal operation
 - These settings include:
   - hold modifier keys:
     - Accessibility &gt; Zoom: hold command or control
 
-### Accessibility
 Zoom
 - Use Keyboard shortcuts to zoom: ON
 - Toggle Zoom: oc8
