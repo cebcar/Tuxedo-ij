@@ -87,7 +87,7 @@
   $INDENT$*$BLURB$*<br/>
   ## Tool $TOOL_NAME$
      $END$<br/>
-     ## *$TOOL_NAME$ Profile*
+  ## $TOOL_NAME$ Profile
   $INDENT$$TOOLTYPE$ @ $LOCATION$<br/>$INDENT$*$BLURB$*<br/>
   
   **Version**: $VERSION$<br/>
