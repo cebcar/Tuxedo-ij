@@ -45,35 +45,34 @@ IntelliJ supports embedding formatted TODO comments in document
 <br/>
 
 ## Issue Labels
-| group | color | label | description |
-|:---|:---:|:---:|:---|
-| | #D73E4A &nbsp;&nbsp;<span style="background-color: #D73E4A">&nbsp;&nbsp;&nbsp;&nbsp;</span> | bug | software defect |
-| | #6B8E23 &nbsp;&nbsp;<span style="background-color: #6B8E23">&nbsp;&nbsp;&nbsp;&nbsp;</span> | techDebt | technical debt |
-| | #DDAB8C &nbsp;&nbsp;<span style="background-color: #DDAB8C">&nbsp;&nbsp;&nbsp;&nbsp;</span> | docs | technical documentation  |
-| | #AC96F1 &nbsp;&nbsp;<span style="background-color: #AC96F1">&nbsp;&nbsp;&nbsp;&nbsp;</span> | tools | developer tools  |
-| | #FFC0CB &nbsp;&nbsp;<span style="background-color: #FFC0CB">&nbsp;&nbsp;&nbsp;&nbsp;</span> | CE | continuing developer education |
-| Epics | | | |
-| | #3E4B9E &nbsp;&nbsp;<span style="background-color: #000064">&nbsp;&nbsp;&nbsp;&nbsp;</span> | Epic | Standard Epic |
-| | #005C00 &nbsp;&nbsp;<span style="background-color: #006400">&nbsp;&nbsp;&nbsp;&nbsp;</span> | Roadmap | Roadmap Project |
-| | #781010 &nbsp;&nbsp;<span style="background-color: #640000">&nbsp;&nbsp;&nbsp;&nbsp;</span> | Initiative | Initiative Epic |
-| Issues to Fix | | | |
-| | #E4E669 &nbsp;&nbsp;<span style="background-color: #E4E669">&nbsp;&nbsp;&nbsp;&nbsp;</span> | fix issue: content | fix issue content |
-| | #E4E669 &nbsp;&nbsp;<span style="background-color: #E4E669">&nbsp;&nbsp;&nbsp;&nbsp;</span> | fix issue: update |update issue |
-| | #E4E669 &nbsp;&nbsp;<span style="background-color: #E4E669">&nbsp;&nbsp;&nbsp;&nbsp;</span> | fix issue: links | fix issue relationships |
-| | #E4E669 &nbsp;&nbsp;<span style="background-color: #E4E669">&nbsp;&nbsp;&nbsp;&nbsp;</span> | fix issue: validity | Is this issue valid now? |
-| | #E4E669 &nbsp;&nbsp;<span style="background-color: #E4E669">&nbsp;&nbsp;&nbsp;&nbsp;</span> | fix issue: unfinished | issue edit is incomplete |
-| | #E4E669 &nbsp;&nbsp;<span style="background-color: #E4E669">&nbsp;&nbsp;&nbsp;&nbsp;</span> | fix issue: duplicate | issue or pull request already exists |
-| Topics | | | |
-| | #8B4513 &nbsp;&nbsp;<span style="background-color: #8B4513">&nbsp;&nbsp;&nbsp;&nbsp;</span> | devops | Development / Operations |
-| | #F95650 &nbsp;&nbsp;<span style="background-color: #F95650">&nbsp;&nbsp;&nbsp;&nbsp;</span> | CI/CD | continuous integration/development |
-| | #11C6F1 &nbsp;&nbsp;<span style="background-color: #11C6F1">&nbsp;&nbsp;&nbsp;&nbsp;</span> | git | working with git |
-| | #A909DA &nbsp;&nbsp;<span style="background-color: #A909DA">&nbsp;&nbsp;&nbsp;&nbsp;</span> | webdev | web development |
-| Platforms | | | |
-| | #E99695 &nbsp;&nbsp;<span style="background-color: #E99695">&nbsp;&nbsp;&nbsp;&nbsp;</span> | macos | macos platform |
-| | #4682B4 &nbsp;&nbsp;<span style="background-color: #4682B4">&nbsp;&nbsp;&nbsp;&nbsp;</span> | ios | ios platform |
-| Languages | | | |
-| | #AEE9A9 &nbsp;&nbsp;<span style="background-color: #AEE9A9">&nbsp;&nbsp;&nbsp;&nbsp;</span> | javascript | javascript |
-| | #FBCA04 &nbsp;&nbsp;<span style="background-color: #FBCA04">&nbsp;&nbsp;&nbsp;&nbsp;</span> | zsh | Z Shell |
+| group |                                            color                                            |          label          | description                          |
+|:---|:-------------------------------------------------------------------------------------------:|:-----------------------:|:-------------------------------------|
+| | #D73E4A &nbsp;&nbsp;<span style="background-color: #D73E4A">&nbsp;&nbsp;&nbsp;&nbsp;</span> |           bug           | software defect                      |
+| | #6B8E23 &nbsp;&nbsp;<span style="background-color: #6B8E23">&nbsp;&nbsp;&nbsp;&nbsp;</span> |        techDebt         | technical debt                       |
+| | #DDAB8C &nbsp;&nbsp;<span style="background-color: #DDAB8C">&nbsp;&nbsp;&nbsp;&nbsp;</span> |          docs           | technical documentation              |
+| | #AC96F1 &nbsp;&nbsp;<span style="background-color: #AC96F1">&nbsp;&nbsp;&nbsp;&nbsp;</span> |          tools          | developer tools                      |
+| | #FFC0CB &nbsp;&nbsp;<span style="background-color: #FFC0CB">&nbsp;&nbsp;&nbsp;&nbsp;</span> |           CE            | continuing developer education       |
+| Epics |                                                                                             |                         |                                      |
+| | #3E4B9E &nbsp;&nbsp;<span style="background-color: #000064">&nbsp;&nbsp;&nbsp;&nbsp;</span> |          Epic           | Standard Epic                        |
+| | #005C00 &nbsp;&nbsp;<span style="background-color: #006400">&nbsp;&nbsp;&nbsp;&nbsp;</span> |         Roadmap         | Roadmap Project                      |
+| Topics |                                                                                             |                         |                                      |
+| | #8B4513 &nbsp;&nbsp;<span style="background-color: #8B4513">&nbsp;&nbsp;&nbsp;&nbsp;</span> |         devops          | Development / Operations             |
+| | #11C6F1 &nbsp;&nbsp;<span style="background-color: #11C6F1">&nbsp;&nbsp;&nbsp;&nbsp;</span> |           git           | working with git                     |
+| | #A909DA &nbsp;&nbsp;<span style="background-color: #A909DA">&nbsp;&nbsp;&nbsp;&nbsp;</span> |         webdev          | web development                      |
+| | #0E8A16 &nbsp;&nbsp;<span style="background-color: #0E8A16">&nbsp;&nbsp;&nbsp;&nbsp;</span> |        sysAdmin         | system administration                |
+| | #FBCA04 &nbsp;&nbsp;<span style="background-color: #FBCA04">&nbsp;&nbsp;&nbsp;&nbsp;</span> |          shell          | shell                                |
+| Platforms |                                                                                             |                         |                                      |
+| | #E99695 &nbsp;&nbsp;<span style="background-color: #E99695">&nbsp;&nbsp;&nbsp;&nbsp;</span> |          macos          | macos platform                       |
+| | #4682B4 &nbsp;&nbsp;<span style="background-color: #4682B4">&nbsp;&nbsp;&nbsp;&nbsp;</span> |           ios           | ios platform                         |
+| Languages |                                                                                             |                         |                                      |
+| | #AEE9A9 &nbsp;&nbsp;<span style="background-color: #AEE9A9">&nbsp;&nbsp;&nbsp;&nbsp;</span> |       javascript        | javascript                           |
+| Issues to Fix |                                                                                             |                         |                                      |
+| | #E4E669 &nbsp;&nbsp;<span style="background-color: #E4E669">&nbsp;&nbsp;&nbsp;&nbsp;</span> |  z-fix issue: content   | fix issue content                    |
+| | #E4E669 &nbsp;&nbsp;<span style="background-color: #E4E669">&nbsp;&nbsp;&nbsp;&nbsp;</span> |   z-fix issue: update   | update issue                         |
+| | #E4E669 &nbsp;&nbsp;<span style="background-color: #E4E669">&nbsp;&nbsp;&nbsp;&nbsp;</span> |   z-fix issue: links    | fix issue relationships              |
+| | #E4E669 &nbsp;&nbsp;<span style="background-color: #E4E669">&nbsp;&nbsp;&nbsp;&nbsp;</span> |  z-fix issue: validity  | Is this issue valid now?             |
+| | #E4E669 &nbsp;&nbsp;<span style="background-color: #E4E669">&nbsp;&nbsp;&nbsp;&nbsp;</span> | z-fix issue: unfinished | issue edit is incomplete             |
+| | #E4E669 &nbsp;&nbsp;<span style="background-color: #E4E669">&nbsp;&nbsp;&nbsp;&nbsp;</span> |  z-ix issue: duplicate  | issue or pull request already exists |
 
 ## Tasks
 ### Create Repo Project
